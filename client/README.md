@@ -1,16 +1,21 @@
-# React + Vite
+# Doctor Appointment Booking System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-stack MERN application for booking and managing doctor appointments with user authentication and database management.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo Links
+- **Frontend (Vercel):** https://doctor-appointment-app-cyan.vercel.app/
+- **Backend (Render):** https://doctor-appointment-app-3xse.onrender.com/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- **Frontend:** React, HTML5, CSS3 / Tailwind CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB Atlas
+- **Authentication:** JSON Web Token (JWT), bcrypt
+- **Deployment:** Vercel (Client) & Render (Server)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## ✨ Key Features
+- User registration and secure login
+- Doctor profile and availability browsing
+- Online doctor appointment booking
+- Booking history and appointment status tracking
+- Fully responsive user interface
