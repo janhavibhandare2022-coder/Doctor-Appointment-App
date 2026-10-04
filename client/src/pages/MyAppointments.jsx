@@ -14,7 +14,7 @@ export default function MyAppointments() {
         return;
       }
 
-      const res = await axios.get(`http://localhost:5000/api/appointments/user/${userId}`);
+      const res = await axios.get(`https://doctor-appointment-app-3xse.onrender.com/api/appointments/user/${userId}`);
       console.log("Fetched appointments:", res.data);
       setAppointments(res.data);
     } catch (err) {
@@ -32,7 +32,7 @@ export default function MyAppointments() {
     }
 
     try {
-      await axios.delete(`http://localhost:5000/api/appointments/${id}`);
+      await axios.delete(`https://doctor-appointment-app-3xse.onrender.com/api/appointments/${id}`);
       setAppointments((prev) => prev.filter((item) => item._id !== id));
       alert("Appointment cancelled successfully!");
     } catch (err) {

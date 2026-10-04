@@ -15,7 +15,7 @@ export default function Login() {
     setError('');
     const endpoint = isSignup ? '/api/auth/signup' : '/api/auth/login';
     try {
-      const res = await axios.post(`http://localhost:5000${endpoint}`, formData);
+      const res = await axios.post(`https://doctor-appointment-app-3xse.onrender.com${endpoint}`, formData);
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', JSON.stringify(res.data.user));
       alert(isSignup ? 'Registered successfully!' : 'Logged in successfully!');

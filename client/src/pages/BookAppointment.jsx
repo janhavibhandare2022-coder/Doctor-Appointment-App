@@ -34,7 +34,7 @@ export default function BookAppointment() {
 
     try {
       setLoading(true);
-      await axios.post('http://localhost:5000/api/appointments/book', data, {
+      await axios.post('https://doctor-appointment-app-3xse.onrender.com/api/appointments/book', data, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       alert('Appointment booked successfully!');
